@@ -1,328 +1,278 @@
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,follow">
-
-    <title>Informativa sulla privacy – Turni Facili</title>
-
-    <meta name="description" content="Informativa sulla privacy dell'app Turni Facili per Android.">
-
-    <style>
-        :root {
-            color-scheme: light;
-            --bg: #f3f6fb;
-            --paper: #ffffff;
-            --text: #202938;
-            --muted: #5d6878;
-            --accent: #2457a7;
-            --line: #dce3ed;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background: var(--bg);
-            color: var(--text);
-            font-family: system-ui, -apple-system, "Segoe UI",
-                Roboto, Arial, sans-serif;
-            line-height: 1.65;
-        }
-
-        main {
-            width: min(900px, calc(100% - 32px));
-            margin: 36px auto;
-            padding: clamp(22px, 5vw, 48px);
-            background: var(--paper);
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            box-shadow: 0 8px 28px rgba(25, 42, 70, 0.06);
-        }
-
-        h1 {
-            margin: 0 0 8px;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            line-height: 1.2;
-        }
-
-        h2 {
-            margin: 32px 0 10px;
-            font-size: 1.25rem;
-            line-height: 1.35;
-        }
-
-        .subtitle,
-        .updated {
-            color: var(--muted);
-        }
-
-        .notice {
-            margin: 24px 0;
-            padding: 16px 18px;
-            background: #f0f5ff;
-            border-left: 4px solid var(--accent);
-            border-radius: 8px;
-        }
-
-        a {
-            color: var(--accent);
-            overflow-wrap: anywhere;
-        }
-
-        footer {
-            margin-top: 36px;
-            padding-top: 18px;
-            border-top: 1px solid var(--line);
-            color: var(--muted);
-            font-size: 0.92rem;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Norme sulla privacy di Turni Facili">
+  <title>Norme sulla privacy – Turni Facili</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172536;
+      --muted: #526477;
+      --accent: #087eae;
+      --line: #dce5ec;
+      --panel: #f4f8fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI",
+            Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: #edf3f7;
+    }
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(22px, 5vw, 48px);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(23,37,54,.07);
+    }
+    h1 {
+      line-height: 1.2;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      margin: 0 0 10px;
+    }
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+    p, li { max-width: 78ch; }
+    .subtitle, .updated { color: var(--muted); }
+    .notice {
+      margin: 24px 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: var(--panel);
+      border-radius: 8px;
+    }
+    a { color: #006b9a; overflow-wrap: anywhere; }
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 36px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+  </style>
 </head>
-
 <body>
 <main>
 
-    <header>
-        <h1>Informativa sulla privacy</h1>
-        <p class="subtitle">
-            <strong>Turni Facili</strong> – applicazione per Android
-        </p>
-        <p class="updated">
-            Ultimo aggiornamento: 11 ottobre 2026
-        </p>
-    </header>
+  <header>
+    <h1>Norme sulla privacy</h1>
+    <p class="subtitle">Turni Facili</p>
+    <p class="updated">Ultimo aggiornamento: 11 ottobre 2026</p>
+  </header>
 
-    <div class="notice">
-        <strong>In breve:</strong>
-        Turni Facili è progettata per gestire le informazioni
-        principalmente sul dispositivo dell’utente. Lo sviluppatore
-        non gestisce un proprio server per raccogliere o archiviare
-        automaticamente i dati dell’app. L’utente può scegliere di
-        esportare o salvare copie dei file tramite servizi esterni
-        disponibili sul dispositivo.
-    </div>
+  <p>
+    La presente informativa descrive come l'applicazione
+    <strong>Turni Facili</strong> tratta le informazioni durante
+    l'utilizzo. Si applica all'app mobile Turni Facili pubblicata
+    dallo sviluppatore indicato di seguito.
+  </p>
 
-    <h2>1. Titolare e contatti</h2>
+  <div class="notice">
+    <strong>In sintesi</strong><br>
+    Turni Facili è progettata per gestire turni e informazioni
+    correlate sul dispositivo dell'utente. Le funzioni di backup
+    ed esportazione possono trasferire un file scelto dall'utente
+    verso una destinazione o un servizio esterno.
+  </div>
 
+  <h2>1. Sviluppatore e contatti</h2>
+
+  <p><strong>Sviluppatore:</strong> Giacomo Iadecola</p>
+  <p><strong>Applicazione:</strong> Turni Facili</p>
+  <p>
+    <strong>Contatto privacy e supporto:</strong>
+    <a href="mailto:SimpleLabOrionSupport@gmail.com">
+      SimpleLabOrionSupport@gmail.com
+    </a>
+  </p>
+  <p>
+    Per domande su questa informativa o richieste relative ai dati,
+    è possibile contattare lo sviluppatore all'indirizzo indicato.
+  </p>
+
+  <h2>2. Informazioni inserite nell'app</h2>
+
+  <p>
+    In base alle funzioni utilizzate, l'utente può inserire o
+    generare informazioni come:
+  </p>
+  <ul>
+    <li>turni di lavoro, orari, calendari, turnazioni e modelli di turno;</li>
+    <li>ore lavorate, straordinari, assenze e riepiloghi;</li>
+    <li>stime o dati relativi a stipendio e TFR, se inseriti dall'utente;</li>
+    <li>note, promemoria, impostazioni e preferenze;</li>
+    <li>dati inclusi nei backup e negli archivi di ripristino.</li>
+  </ul>
+  <p>
+    Le informazioni effettivamente presenti dipendono da ciò che
+    l'utente sceglie di inserire e dalle funzioni che utilizza.
+  </p>
+
+  <h2>3. Conservazione sul dispositivo</h2>
+
+  <p>
+    Le funzioni principali sono progettate per lavorare sul
+    dispositivo dell'utente. I dati salvati localmente restano
+    nella memoria dell'app, salvo esportazioni, backup, condivisioni
+    avviate dall'utente o operazioni del sistema operativo.
+  </p>
+  <p>
+    La presenza di dati locali non dimostra da sola che nessuna
+    informazione tecnica possa essere trattata da librerie integrate
+    o servizi del sistema operativo. Tali componenti devono essere
+    valutati in base alle loro effettive pratiche e configurazioni.
+  </p>
+
+  <h2>4. Backup, esportazione e servizi esterni</h2>
+
+  <p>
+    L'app offre funzioni di backup e ripristino, anche tramite una
+    destinazione esterna o un provider cloud scelto dall'utente.
+    Un backup può contenere una copia dei dati dell'app, comprese
+    le informazioni elencate nella sezione 2.
+  </p>
+  <p>
+    Quando l'utente sceglie di esportare o caricare un file su un
+    servizio esterno, il trattamento successivo dipende anche dalle
+    condizioni e dall'informativa del relativo fornitore.
+    Lo sviluppatore di Turni Facili non controlla le modalità con
+    cui il provider esterno conserva, protegge o elimina il file.
+    Prima di condividere un backup, l'utente dovrebbe verificare
+    contenuto e destinazione.
+  </p>
+
+  <h2>5. Finalità d'uso</h2>
+
+  <p>
+    Le informazioni sono utilizzate per fornire le funzioni richieste:
+    organizzazione dei turni, calcoli e riepiloghi, promemoria,
+    personalizzazione, esportazione, backup e ripristino.
+  </p>
+
+  <h2>6. Condivisione dei dati</h2>
+
+  <p>
+    Lo sviluppatore non vende i dati personali inseriti dall'utente
+    nell'app. La condivisione verso servizi esterni può avvenire
+    quando l'utente seleziona una funzione di esportazione, backup
+    o condivisione. I fornitori esterni trattano i dati secondo
+    le proprie condizioni e informative.
+  </p>
+  <p>
+    Le pratiche di eventuali componenti software di terze parti
+    integrate nell'app devono essere verificate e considerate anche
+    nella dichiarazione Sicurezza dei dati di Google Play.
+    Questa informativa e le dichiarazioni dello Store devono essere
+    aggiornate se cambiano le modalità di trattamento.
+  </p>
+
+  <h2>7. Pubblicità e tracciamento</h2>
+
+  <p>
+    Alla data indicata in questa informativa, Turni Facili non è
+    progettata per mostrare annunci pubblicitari e non viene
+    dichiarata l'integrazione di un SDK pubblicitario.
+    Se una versione futura introdurrà annunci, strumenti di
+    misurazione o componenti che trattano dati per finalità
+    pubblicitarie, questa informativa e le dichiarazioni pertinenti
+    su Google Play dovranno essere aggiornate in modo coerente
+    prima o contestualmente alla distribuzione della versione
+    interessata.
+  </p>
+
+  <h2>8. Notifiche e promemoria</h2>
+
+  <p>
+    L'app può programmare notifiche o promemoria associati alle
+    funzioni configurate dall'utente. Il loro funzionamento dipende
+    dalle autorizzazioni e dalle impostazioni dell'app e del sistema
+    operativo. L'utente può gestire le autorizzazioni dalle
+    impostazioni Android e modificare o disattivare i promemoria
+    tramite le funzioni disponibili.
+  </p>
+
+  <h2>9. Conservazione ed eliminazione</h2>
+
+  <p>
+    I dati locali restano sul dispositivo finché sono conservati
+    dall'app o dal sistema operativo. L'utente può modificare o
+    eliminare le informazioni tramite le funzioni disponibili,
+    ove previste, e può cancellare i dati dell'app dalle impostazioni
+    Android o disinstallarla. Prima di farlo, è opportuno esportare
+    le informazioni che si desidera conservare.
+  </p>
+  <p>
+    La disinstallazione non elimina automaticamente le copie di
+    backup salvate altrove. I file esportati o caricati su servizi
+    esterni devono essere eliminati dall'utente tramite il servizio
+    o la destinazione in cui si trovano. Se in futuro venissero
+    introdotti account o archiviazione gestita dallo sviluppatore,
+    saranno necessarie istruzioni specifiche per l'eliminazione
+    dei relativi dati.
+  </p>
+
+  <h2>10. Sicurezza</h2>
+
+  <p>
+    Si consiglia di proteggere il dispositivo con blocco schermo
+    e mantenerne aggiornato il sistema operativo. I backup possono
+    contenere informazioni personali: conservarli in luoghi sicuri
+    e usare connessioni protette per i trasferimenti online.
+    Nessun sistema può garantire sicurezza assoluta in ogni
+    circostanza.
+  </p>
+
+  <h2>11. Minori</h2>
+
+  <p>
+    Turni Facili è uno strumento di organizzazione personale e
+    lavorativa e non è progettata specificamente per raccogliere
+    dati da bambini. L'utente è responsabile delle informazioni
+    che decide di inserire.
+  </p>
+
+  <h2>12. Diritti e richieste</h2>
+
+  <p>
+    Per chiedere informazioni sul trattamento o esercitare i diritti
+    applicabili in materia di protezione dei dati, scrivere a
+    <a href="mailto:SimpleLabOrionSupport@gmail.com">
+      SimpleLabOrionSupport@gmail.com
+    </a>.
+    I dati conservati esclusivamente sul dispositivo o presso
+    provider esterni potrebbero richiedere un intervento diretto
+    dell'utente sul dispositivo o sul servizio interessato.
+  </p>
+
+  <h2>13. Modifiche all'informativa</h2>
+
+  <p>
+    Questa informativa può essere aggiornata per riflettere
+    cambiamenti nelle funzioni, nei componenti integrati o nei
+    requisiti applicabili. La pagina pubblicata riporterà la data
+    dell'ultimo aggiornamento. Le dichiarazioni pertinenti su
+    Google Play devono essere aggiornate in modo coerente.
+  </p>
+
+  <footer>
+    <p>Turni Facili · Sviluppatore: Giacomo Iadecola</p>
     <p>
-        L’applicazione Turni Facili è sviluppata e gestita da
-        <strong>Giacomo Iadecola</strong>.
+      Contatto:
+      <a href="mailto:SimpleLabOrionSupport@gmail.com">
+        SimpleLabOrionSupport@gmail.com
+      </a>
     </p>
-
-    <p>
-        Per domande sulla presente informativa o richieste relative
-        alla privacy, contattare lo sviluppatore:
-        <a href="mailto:SimpleLabOrionSupport@gmail.com">
-            SimpleLabOrionSupport@gmail.com
-        </a>.
-    </p>
-
-    <h2>2. Dati che l’utente può inserire o generare</h2>
-
-    <p>
-        In base alle funzioni utilizzate, l’app può trattare
-        informazioni inserite dall’utente o generate durante l’uso,
-        tra cui:
-    </p>
-
-    <ul>
-        <li>turni di lavoro, calendario, orari e modelli di turno;</li>
-        <li>ore lavorate, straordinari, ferie, permessi e assenze;</li>
-        <li>promemoria, sveglie e impostazioni delle notifiche;</li>
-        <li>note, annotazioni o contenuti del diario;</li>
-        <li>stipendio, compensi, valori economici e statistiche
-            calcolate dall’utente;</li>
-        <li>impostazioni, preferenze e informazioni eventualmente
-            conservate nell’archivio personale;</li>
-        <li>file e documenti che l’utente decide di creare,
-            importare o associare alle funzioni dell’app.</li>
-    </ul>
-
-    <p>
-        Le informazioni effettivamente presenti dipendono da ciò
-        che l’utente sceglie di inserire e dalle funzioni utilizzate.
-        Si raccomanda di non inserire dati personali di altre persone
-        senza una base legittima per farlo.
-    </p>
-
-    <h2>3. Dove vengono conservati i dati</h2>
-
-    <p>
-        I dati di gestione dell’app sono conservati principalmente
-        nella memoria locale del dispositivo Android. Lo sviluppatore
-        non dispone di un proprio server destinato a ricevere,
-        raccogliere o archiviare automaticamente tali dati.
-        Per le funzioni descritte in questa informativa non è
-        richiesta la creazione di un account presso lo sviluppatore.
-    </p>
-
-    <p>
-        I dati locali restano sul dispositivo finché l’utente non
-        li modifica o elimina, cancella i dati dell’app dalle
-        impostazioni Android oppure disinstalla l’app.
-        La disinstallazione può eliminare i dati locali dell’app,
-        ma non elimina necessariamente i file esportati in altre
-        cartelle o presso servizi esterni.
-    </p>
-
-    <h2>4. Backup, importazione ed esportazione verso servizi esterni</h2>
-
-    <p>
-        Turni Facili può consentire di esportare o importare copie
-        di dati e backup tramite file, usando il selettore di
-        documenti Android e le destinazioni rese disponibili sul
-        dispositivo. In base alle applicazioni installate e alle
-        scelte dell’utente, tali destinazioni possono includere
-        servizi di archiviazione o condivisione di terze parti,
-        come Google Drive, Microsoft OneDrive, Dropbox o servizi
-        analoghi.
-    </p>
-
-    <p>
-        Queste operazioni vengono avviate dall’utente: l’app non
-        invia automaticamente i dati a un cloud gestito dallo
-        sviluppatore e non effettua una sincronizzazione automatica
-        con un server proprio. Quando l’utente sceglie una
-        destinazione esterna, il file viene gestito anche dal
-        servizio scelto, secondo le condizioni, le impostazioni
-        e l’informativa sulla privacy del relativo fornitore.
-    </p>
-
-    <p>
-        Lo sviluppatore non controlla i servizi esterni, i loro
-        account, i tempi di conservazione o le eventuali condivisioni
-        effettuate tramite tali servizi. Prima di caricare un backup,
-        l’utente dovrebbe verificarne il contenuto e le impostazioni
-        di condivisione della destinazione scelta.
-    </p>
-
-    <h2>5. Comunicazione a terzi, pubblicità e tracciamento</h2>
-
-    <p>
-        In base all’architettura prevista dell’app, i dati inseriti
-        non vengono trasmessi automaticamente allo sviluppatore
-        tramite un suo server. Non sono previsti account gestiti
-        dallo sviluppatore né strumenti pubblicitari o di analisi
-        comportamentale integrati nell’app.
-    </p>
-
-    <p>
-        La scelta dell’utente di esportare, condividere o salvare
-        un file con un’app o un servizio di terze parti comporta
-        il trattamento del file da parte del servizio scelto,
-        secondo le regole di quel fornitore.
-    </p>
-
-    <h2>6. Permessi e funzioni del dispositivo</h2>
-
-    <p>
-        In relazione alle funzioni utilizzate, l’app può richiedere
-        autorizzazioni Android necessarie per notifiche e promemoria
-        programmati, incluse le funzionalità di sveglia o allarme
-        quando supportate dal dispositivo e dalla versione di
-        Android. Il comportamento può dipendere dalle impostazioni
-        del sistema operativo e dai permessi concessi.
-    </p>
-
-    <p>
-        L’utente può gestire i permessi dalle impostazioni Android.
-        Revocare un permesso può limitare o impedire la relativa
-        funzione, ad esempio la visualizzazione delle notifiche
-        o l’esecuzione puntuale di un promemoria.
-    </p>
-
-    <h2>7. Sicurezza</h2>
-
-    <p>
-        La conservazione locale riduce la necessità di trasferire
-        i dati a un server dello sviluppatore, ma non elimina
-        tutti i rischi. La sicurezza dei dati locali dipende anche
-        dal dispositivo, dal blocco schermo, dagli aggiornamenti,
-        dai backup e dalle impostazioni scelte dall’utente.
-        Nessun sistema di archiviazione o trasferimento può essere
-        garantito come assolutamente sicuro.
-    </p>
-
-    <p>
-        È consigliabile proteggere il dispositivo, mantenere
-        Android aggiornato e conservare i backup in luoghi
-        affidabili, evitando di condividere file contenenti
-        informazioni personali o economiche con destinatari
-        non autorizzati.
-    </p>
-
-    <h2>8. Conservazione e cancellazione</h2>
-
-    <p>
-        Lo sviluppatore non conserva una copia centralizzata dei
-        dati dell’app su un proprio server. I dati locali possono
-        essere modificati o cancellati tramite le funzioni dell’app,
-        ove disponibili, oppure tramite le impostazioni Android.
-        I file esportati devono essere eliminati separatamente
-        dalla cartella, dall’app o dal servizio in cui sono stati
-        salvati. Per le copie esterne occorre seguire le procedure
-        del relativo fornitore.
-    </p>
-
-    <h2>9. Diritti e richieste relative alla privacy</h2>
-
-    <p>
-        Per informazioni o richieste relative al trattamento dei
-        dati personali, è possibile scrivere a
-        <a href="mailto:SimpleLabOrionSupport@gmail.com">
-            SimpleLabOrionSupport@gmail.com
-        </a>, indicando chiaramente la richiesta. Poiché i dati
-        dell’app sono conservati principalmente sul dispositivo
-        e non in un archivio centrale dello sviluppatore, alcune
-        operazioni sui dati locali devono essere effettuate
-        direttamente dall’utente. Per i dati conservati presso
-        servizi esterni, l’utente deve rivolgersi anche al
-        relativo fornitore.
-    </p>
-
-    <p>
-        Restano applicabili, ove ne ricorrano i presupposti,
-        i diritti previsti dalla normativa vigente in materia
-        di protezione dei dati personali, incluso il Regolamento
-        (UE) 2016/679 (GDPR).
-    </p>
-
-    <h2>10. Minori</h2>
-
-    <p>
-        Turni Facili è uno strumento di organizzazione personale
-        e lavorativa e non è progettata specificamente per
-        raccogliere dati personali di minori. Lo sviluppatore
-        non invita gli utenti a inserire dati di minori.
-        Chi ritiene che siano stati forniti dati personali in
-        modo non appropriato può contattare lo sviluppatore
-        all’indirizzo indicato in questa pagina.
-    </p>
-
-    <h2>11. Modifiche a questa informativa</h2>
-
-    <p>
-        Questa informativa può essere aggiornata per riflettere
-        cambiamenti nelle funzioni dell’app, nei servizi supportati
-        o negli obblighi applicabili. La versione aggiornata sarà
-        pubblicata su questa stessa pagina con la relativa data
-        di aggiornamento. È consigliabile consultarla periodicamente.
-    </p>
-
-    <footer>
-        <p><strong>Turni Facili</strong> · Sviluppatore: Giacomo Iadecola</p>
-        <p>
-            Contatto privacy/supporto:
-            <a href="mailto:SimpleLabOrionSupport@gmail.com">
-                SimpleLabOrionSupport@gmail.com
-            </a>
-        </p>
-    </footer>
+  </footer>
 
 </main>
 </body>
